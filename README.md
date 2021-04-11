@@ -1,3 +1,10 @@
 # PHPWebScraping
 Scraping web whith PHP
-yeeehhhh
+
+
+
+easy make Screaping whith PHP  
+only need an Url
+
+
+examlpe: Get title and price from amazon article
