@@ -3,14 +3,14 @@
 
     $dom = new DOMDocument();
     @$dom->loadHTML($url);
-    $divs = $dom->getElementsByTagName( 'span' );
+    $spans = $dom->getElementsByTagName( 'span' );
  
-foreach( $divs as $div ){
-    if( $div->getAttribute( 'class' ) === 'a-size-large product-title-word-break' ){
-        $title = $div->nodeValue;
+foreach( $spans as $span ){
+    if( $span->getAttribute( 'class' ) === 'a-size-large product-title-word-break' ){
+        $title = $span->nodeValue;
     }
-    if( $div->getAttribute( 'class' ) === 'a-size-medium a-color-price priceBlockBuyingPriceString' ){
-            $price = $div->nodeValue;
+    if( $span->getAttribute( 'class' ) === 'a-size-medium a-color-price priceBlockBuyingPriceString' ){
+            $price = $span->nodeValue;
             break;
         }
     }
